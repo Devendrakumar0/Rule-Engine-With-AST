@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Rules List Styles */
+.rule-list {
+    margin-top: 30px;
+}
+
+.rule-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rule-list ul li {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-left: 5px solid #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Highlight Existing Rules */
+.rule-list ul li.highlight {
+    background-color: #e7f3ff; /* Light blue background */
+    border-color: #007BFF; /* Blue left border */
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2); /* Light blue shadow */
+}
+
+.rule-list ul li:hover {
+    background-color: #e9e9e9;
+}
+
+/* Button Group Styles */
+.button-group {
+    margin-top: 15px;
+}
+
+.edit-button,
+.delete-button {
+    margin-right: 10px;
+}
+
+.edit-button {
+    background-color: #28a745;
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

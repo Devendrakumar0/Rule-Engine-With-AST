@@ -1,0 +1,98 @@
+/* result.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger heading */
+}
+
+.result {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f9f9f9; /* Light background */
+    border: 2px solid transparent; /* Border for hover effect */
+    transition: all 0.3s ease;
+}
+
+.result.true {
+    border-color: #28a745; /* Green for eligible */
+    color: #28a745; /* Green text */
+}
+
+.result.false {
+    border-color: #dc3545; /* Red for not eligible */
+    color: #dc3545; /* Red text */
+}
+
+.result:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.emoji {
+    font-size: 40px; /* Larger emoji size */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        width: 90%; /* Responsive width */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .back-button {
+        width: 100%;
+        text-align: center;
+    }
+}
