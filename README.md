@@ -20,16 +20,16 @@ This project implements a Rule Engine that dynamically creates, modifies, and ev
 ## Database Setup
 ### Set up MySQL (or another database you're using) and create the necessary tables:
 
-sql
+- sql
 
-CREATE DATABASE rule_engine;
-USE rule_engine;
+**CREATE DATABASE rule_engine;
+USE rule_engine;**
 
--- Example table for rules
-CREATE TABLE rules (
+- Example table for rules
+**CREATE TABLE rules (
     id INT AUTO_INCREMENT PRIMARY KEY,
     rule_string VARCHAR(255) NOT NULL
-);
+);**
 
 
 
